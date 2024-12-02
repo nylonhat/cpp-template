@@ -1,4 +1,4 @@
-CXX := g++
+CXX := clang++
 CEXT := cpp
 CXXFLAGS := -Wall -g -O3 -std=c++23
 
@@ -6,7 +6,7 @@ SRCPATH := ./src
 BINPATH := ./bin
 OBJPATH := $(BINPATH)/obj
 LIBPATHS := ./dep/lib
-LIBFLAGS :=
+LIBFLAGS := #-lCatch2Main -lCatch2
 INCLUDEPATH := ./dep/include
 MAKEDEPSPATH := ./etc/make-deps
 
